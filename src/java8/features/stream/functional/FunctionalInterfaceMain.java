@@ -4,10 +4,18 @@ public class FunctionalInterfaceMain {
 
 	public static void main(String[] args) {
 		Test t = () -> System.out.println("@FunctionalInterface implemented");
-		t.implementMe();
-		t.defaultMethod();
-		Test.staticMethod();
-		A.staticMethod();
+//		t.implementMe();
+//		t.defaultMethod();
+//		Test.staticMethod();
+//		A.staticMethod();
+		
+		/*
+		 * String a = "8"; String b = "97"; String c = "6"; String d = "67";
+		 * 
+		 * if(Integer.parseInt(a+b) > Integer.parseInt(c+d)) { System.out.println(">");
+		 * }else { System.out.println("<"); }
+		 */
+		
 	}
 
 }
