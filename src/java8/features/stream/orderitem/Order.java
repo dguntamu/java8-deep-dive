@@ -6,7 +6,6 @@ public class Order {
 	private Integer orderId;
 	private List<Item> items;
 	
-	
 
 	public Order(Integer orderId, List<Item> items) {
 		super();
@@ -28,6 +27,11 @@ public class Order {
 
 	public void setItems(List<Item> items) {
 		this.items = items;
+	}
+
+	@Override
+	public String toString() {
+		return "Order [orderId=" + orderId + ", items=" + items + "]";
 	}
 
 }

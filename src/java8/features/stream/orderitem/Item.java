@@ -4,13 +4,20 @@ public class Item {
 	private Integer itemId;
 	private Integer price;
 	private String name;
-	
 
-	public Item(Integer itemId, String name,Integer price) {
+	public Item(Integer itemId, String name, Integer price) {
 		super();
 		this.itemId = itemId;
 		this.price = price;
-		this.name=name;
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public Integer getItemId() {
@@ -27,6 +34,11 @@ public class Item {
 
 	public void setPrice(Integer price) {
 		this.price = price;
+	}
+
+	@Override
+	public String toString() {
+		return "Item [itemId=" + itemId + ", price=" + price + ", name=" + name + "]";
 	}
 
 }
